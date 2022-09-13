@@ -4,7 +4,6 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 const path = require("path");
 const productsRoutes = require('./backend/routes/products')
-const colors = require('colors')
 const mongoDB = require('./backend/config/db')
 const { errorHandler } = require('./backend/middleware/errorMiddleware')
 
@@ -35,7 +34,7 @@ mongoDB()
 
 
 app.listen(PORT,()=>{
-    console.log(`Server is running on port ${PORT}`.underline.cyan)})
+    console.log(`Server is running on port ${PORT}`)})
 
 
 
