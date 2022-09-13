@@ -15,7 +15,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname,'public')))
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
 
 app.use('/api/products', productsRoutes)
