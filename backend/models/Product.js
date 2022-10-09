@@ -27,6 +27,10 @@ const productSchema = new Schema({
     type: Number,
     require: true,
   },
+    rate : {
+      type: Number,
+      default: 5
+    }
 
 },{timestamps: true});
 
